@@ -4,17 +4,17 @@ import {Link} from "react-router-dom"
 function Navbar() {
   return (
 
-    <div className='space-x-11 text-4xl font-semibold bg-slate-900 text-white w-[100vw] '>
-        <Link to="/">
+    <div className='space-x-11 text-4xl font-semibold bg-slate-900 text-white  fixed w-full top-0 left-0 '>
+        <Link to="/" className=' hover:text-yellow-300 '>
         <button>Books</button>
         </Link>
-        <Link to="/chracter">
+        <Link to="/chracter" className=' hover:text-yellow-300'>
         <button>Chracter</button>
         </Link>
-        <Link to="/houses">
-        <button>Houses</button>
+        <Link to="/movies" className=' hover:text-yellow-300' >
+        <button>Movies</button>
         </Link>
-        <Link to="/spell">
+        <Link to="/spell" className=' hover:text-yellow-300'>
         <button>Spell</button>
         </Link>
     </div>
