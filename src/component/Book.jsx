@@ -36,15 +36,15 @@ function Book() {
     console.log(storedata)
      return (
           <>
-         <div>
+         <div className='mx-auto w-full pl-10 '>
          <Link to="/">
              <h1 className='text-4xl font-semibold mt-4'>Books Of Harry Potter</h1>
              </Link>
-             <div className=" grid grid-cols-3 gap-[50px] mt-10  "> 
+             <div className=" grid grid-cols-3 gap-[50px] mt-10 w-[1200px] mx-auto  "> 
              {
                          storedata.map((item,index) => (
                            <div className=' '>
-                            <div key={index} className=' bg-white w-[400px]  border-2 border-slate-500 p-2 rounded-md'>
+                            <div key={index} className=' bg-white w-[300px] hover:scale-105 transition-all duration-300 border-2 border-slate-500 p-2 rounded-md '>
                             <img src={item.cover} alt="harry potter image" className='rounded-md mx-auto h-auto'/>
                             <h1 className='text-lg font-semibold'>{item.title}</h1>
                             

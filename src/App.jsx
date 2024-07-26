@@ -11,19 +11,21 @@ function App() {
 
   return (
 
-    <>
-    <Navbar className="w-[100wh]" path="/"/>
+    
+    <div className="bg item-center justify-center overflow-y-hidden w-[100vw]">
+    <Navbar className="" path="/"/>
       <Routes>
         <Route path="/" element={<Book/>}/>
         <Route path="/chracter" element={<Chracter/>}/>
         <Route path="/houses" element={<Houses/>}/>
         <Route path="/spell" element={<Spell/>}/>
       </Routes>
+    </div>
          
 
       
       
-    </>
+    
   )
 }
 

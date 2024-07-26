@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: full;
+  
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
 }
 
 .logo {
@@ -34,7 +36,13 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2em ;
+}
+
+/*css for apis*/
+
+.bg{
+  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
 }
 
 .read-the-docs {
