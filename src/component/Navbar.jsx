@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 function Navbar() {
   return (
 
-    <div className='space-x-11 text-4xl font-semibold bg-slate-900 text-white  fixed w-full top-0 left-0 '>
+    <div className='space-x-11 text-4xl font-semibold bg-slate-900 text-white  fixed w-full top-0 left-0 z-10 p-4 '>
         <Link to="/" className=' hover:text-yellow-300 '>
         <button>Books</button>
         </Link>

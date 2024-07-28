@@ -6,6 +6,7 @@ import Chracter from './component/Chracter'
 import Movies from './component/Movies'
 import Spell from './component/Spell'
 import Navbar from './component/Navbar'
+import Modal from './component/Modal'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/chracter" element={<Chracter/>}/>
         <Route path="/movies" element={<Movies/>}/>
         <Route path="/spell" element={<Spell/>}/>
+        <Route path="/modal" element={<Modal/>}/>
       </Routes>
     </div>
          

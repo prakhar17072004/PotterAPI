@@ -37,14 +37,18 @@ function Spell() {
     console.log(moviesdata)
      return (
           <>
-         <div className='mx-auto w-full pl-10  pt-10'>
-         <Link to="/chracter">
-             <h1 className='text-4xl font-semibold mt-4 text-slate-400'>All Movies Of Harry Potter</h1>
+          {/* Main div */}
+         <div className='mx-auto w-full pl-10  pt-10 mt-5 mb-16'>
+         <Link to="/spell">
+             {/* Heading */}
+             <h1 className='text-4xl font-semibold mt-4 text-black'>All Spell Of Harry Potter</h1>
              </Link>
-             <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10  mx-auto  "> 
+             {/* card main div */}
+             <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10  mx-auto  "> 
              {
                         moviesdata.map((item,index) => (
-                           <div className='overflow-hidden card bg-white  hover:scale-110 transition-all duration-500  mt-8 place-content-center border-2 border-slate-500 p-2 rounded-md '>
+                          // card div
+                           <div className='overflow-hidden card hover:border-none hover:shadow-lg hover:shadow-white hover:scale-110 transition-all duration-500  mt-8 place-content-center border-2 border-slate-500 p-2 rounded-lg '>
                             <div key={index} className=''>
                             
                             <h1 className='text-lg font-bold'>{item.name}</h1>

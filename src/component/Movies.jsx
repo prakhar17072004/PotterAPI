@@ -36,15 +36,19 @@ function Movies() {
   console.log(moviesdata)
    return (
         <>
-       <div className='mx-auto w-full pl-10 pt-10 '>
-       <Link to="/chracter">
+        {/* Main div */}
+       <div className='mx-auto w-full pl-10 pt-10 mt-5 mb-14'>
+       <Link to="/movies">
+       {/* Heading */}
            <h1 className='text-4xl font-semibold mt-4 text-slate-400'>All Movies Of Harry Potter</h1>
            </Link>
+           {/* card main div */}
            <div className=" grid grid-cols-3 gap-[50px] mt-10 w-[1000px] mx-auto  "> 
            {
                       moviesdata.map((item,index) => (
+                        // card div
                          <div className=' '>
-                          <div key={index} className=' bg-white w-[200px] hover:scale-110 transition-all duration-500 h-[370px] mt-8 place-content-center border-2 border-slate-500 p-2 rounded-md '>
+                          <div key={index} className=' bg-white w-[200px] hover:border-none   hover:shadow-lg hover:shadow-red-600 hover:scale-110 transition-all duration-500 h-[370px] mt-8 place-content-center border-2 border-slate-500 p-2 rounded-lg '>
                           <img src={item.poster} alt="harry potter image" className='rounded-md mx-auto h-auto'/>
                           <h1 className='text-lg font-semibold'>{item.title}</h1>
                           <h3 className='text-lg font-medium'>{item.release_date}</h3>
