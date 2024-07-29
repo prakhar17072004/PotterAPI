@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import defaultImage from "../assets/default.jpg"
 
-function Chracter() {
+function Character() {
   const [loading, setLoading] = useState(false);
   const [characterdata, setCharacterData] = useState([]);
 
@@ -73,4 +73,4 @@ function Chracter() {
   );
 }
 
-export default Chracter;
+export default Character;
