@@ -8,8 +8,8 @@ function Navbar() {
         <Link to="/" className=' hover:text-yellow-300 '>
         <button>Books</button>
         </Link>
-        <Link to="/chracter" className=' hover:text-yellow-300'>
-        <button>Chracter</button>
+        <Link to="/character" className=' hover:text-yellow-300'>
+        <button>Character</button>
         </Link>
         <Link to="/movies" className=' hover:text-yellow-300' >
         <button>Movies</button>
